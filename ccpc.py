@@ -18,8 +18,9 @@ def Mkdir(path):
 
 
 print("              C/CPP PROJECT CREATE\n")
-print(" Current working directory: ",os.getcwd())
-print(" Now Create a C/CPP project with CMake")
+print(" Current working directory:  ",os.getcwd())
+print(" Create a C/CPP project with CMakeLists and ycm_conf")
+print(" ccpc version: 0.1             2019.10.16 10:54     ")
 print(" tools: python3              Designed by whosecube\n")
 
 
