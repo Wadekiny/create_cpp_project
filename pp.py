@@ -39,13 +39,13 @@ while True:
         include_path = project_path + "/include"
         src_path = project_path + "/src"
         is_new_project = True
-        print("the project_path is ", project_path)
+        print("*** The project_path is '"+ project_path+"' ***")
         if Mkdir(project_path) == True:
 #all directory
             Mkdir(build_path)
             Mkdir(include_path)
             Mkdir(src_path)    
-            print("Creation Finished: all directory is created")
+            print("Creation Finished: all directorys is created")
 #main.cpp
             file_main = open(project_path+"/src/main.cpp", "w", encoding = "utf-8")
             file_main.write("#include<iostream>\n\n")
@@ -66,14 +66,14 @@ while True:
             file_readme = open(project_path+"/README.md", "w", encoding = "utf-8")
             file_readme.close()
             print("Creation file successful: README.md")
-            print("Create Finish: all file is created")
+            print("Create Finish: all files is created")
 
     elif cmd_string == "nc" or cmd_string == "new class":
         if is_new_project == True:
             class_string = input("Please input the class name\n---------------\nnew class >> ")
             class_list = class_string.split()
             success_class = 0
-            print("Create Target: ", len(class_list), " classes\n")
+            print("Target: ", len(class_list), " classes")
             for i in range(0,len(class_list),1):
                 class_string = class_list[i]
                 cpp_path = project_path + "/src/" + class_string + ".cpp" 
